@@ -85,6 +85,8 @@ Voici les erreurs auquels nous avons fait face et comment nous y avons remedier.
 
 Comme on souhaite ouvrir une machine virtuelle dans une machine virtuelle il est nécéssaire d'activer la case VTx/AMD imbriqué dans les paramètre de votre sytème. 
 
+<img width="675" alt="Capture d’écran 2020-12-29 à 18 22 32" src="https://user-images.githubusercontent.com/44178364/103304223-55867100-4a08-11eb-8b46-28fc0db8d322.png">
+
 Si la case est grisé vous pouvez tapez la command suivante dans votre terminale de commande Windows : 
 ```
 VBoxManage modifyvm LeNomDeVotreMAchine --nested-hw-virt on
