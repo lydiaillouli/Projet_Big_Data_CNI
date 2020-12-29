@@ -92,8 +92,14 @@ Comme on souhaite ouvrir une machine virtuelle dans une machine virtuelle il est
 Si la case est grisé vous pouvez tapez la command suivante dans votre terminale de commande Windows : 
 ```
 VBoxManage modifyvm LeNomDeVotreMAchine --nested-hw-virt on
-
 ```
 La case sera cette fois-ci coché. Ainsi, lorsque vous allez exécuter la commande *vagrant up* l'erreur aura disparu.
 
+##Conclusion
+
+Ainsi nous vous avons présenté notre projet ainsi que les étapes qui vous permetterons de l'implémenter sur votre machine. Si vous avez des questions n'hésitez pas à nous contacter sur nos adresses emails : 
+
+mohamed.benbouzid@edu.ece.fr
+pierre.dacostafaro@edu.ece.fr
+lydia.illouli@edu.ece.fr
 
