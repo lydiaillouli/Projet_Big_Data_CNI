@@ -48,11 +48,18 @@ mettre la capture vagrant_version
 ### Installation de Ansible
 Pour installer Ansible, rendez-vous sur <a href ="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">le site d'Ansible</a> . 
 
-Comme nous utilison Ubuntu nous allons l'installer de la manière suivante: 
+Comme nous utilisons Ubuntu nous allons l'installer de la manière suivante: 
 ```
 sudo apt install ansible
 ```
-Ensuite, pour savoir si l'installation c'est biend déroulée il faudra verifié la version de Ansible : 
+Ensuite, pour savoir si l'installation c'est bien déroulée il faudra verifié la version de Ansible 
 ```
 ansible --version
 ```
+**Résultat**
+
+mettre la capture ansible_version
+
+### Éxécuter le projet 
+
+
