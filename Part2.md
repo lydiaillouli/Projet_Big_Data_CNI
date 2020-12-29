@@ -26,5 +26,26 @@ Bravo vous venez d'installaer VirtualBox sur votre machine.
 ### Installation de Vagrant
 Pour installer Vagrant vous avez deux méthodes : 
 1.  Vous pouvez aller directement sur le site officel de Vagrant en cliquant <a href="https://www.vagrantup.com/downloads.html">ici</a>  et télécharger le package correspondant à votre système d'exploitation.
-2. Si vous êtes sous Ubuntu comme nous  
+2. Si vous êtes sous Ubuntu comme nous voici les commandes à saisir : 
+Télécharger le package Vagrant:
+```
+curl -O https://releases.hashicorp.com/vagrant/2.2.6/vagrant_2.2.6_i686.deb
+```
+*Remarque : Au moment de la rédaction de cet article, la dernière version de Vagrant est la version 2.2.13. Rendez vous sur le site de Vagrant pour voir si une nouvelle version est disponible.*
+Une fois le fichier téléchargé, installez-le
+```
+sudo apt install ./vagrant_2.2.6_i686.deb
+```
+Une fois l'installation terminer vous pouvez testez si tout est bien installer , en vérifiant la version de vagrant :
+```
+vagrant --version
+```
+
+**Résultat**
+
+mettre la capture vagrant_version
+
+### Installation de Ansible
+
+
 
