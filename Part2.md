@@ -65,6 +65,7 @@ ansible --version
 Maintenant que nous avons installer tous les outils dont nous avons besoin, il est temps d'excuter le projet. Dans une premier temps télécharger puis le dézipper dans votre dossier. Ensuite ouvrez votre terminal de commande puis dirigez vous vers le dossier où ce trouve notre projet. Pour notre part nous avons placé le projet dans le dossier *Documents*
 mettre la vagarnt_up
 Une fois dessus tapez la commande suivante : 
+
 ![vagrant_up](https://user-images.githubusercontent.com/44178364/103303952-a053b900-4a07-11eb-9338-695881337d51.PNG)
 
 ```
@@ -75,6 +76,7 @@ Une fois l'exécution terminée, il vous suffit d'ouvrir VirtualBox et vous visu
 ### Erreur possible
 Au moment ou vous excecutez votre projet avec la commande *vagrant up* il est possible que vous ayez des erreurs.
 Voici les erreurs auquels nous avons fait face et comment nous y avons remedier. 
+
 
 
 **Erreur 1 : Stderr: VBoxManage: error: VT-x is not available (VERR_VMX_NO_VMX)**
