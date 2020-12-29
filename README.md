@@ -155,7 +155,7 @@ Pour implémenter notre projet il faudra utiliser un système d'exploitation Lin
 - Si vous êtes sous **Windows** (ce qui était notre cas), le projet pourra être exécuté sur une machine virtuelle Unbuntu (par exemple) via VirtualBox.
 - Si vous êtes sous **Mac** il suffit juste de télécharger VirtualBox ou bien Vmware. Attention ! Pour ceux qui sont sous le nouveau Mackbook M1, VirtualBox et WMware ne sont pas encore compatible avec cette nouvelle version. Vous pouvez néanmoins utiliser une machine virtuelle Fedora pour lancer le projet. Retrouvez en cliquant <a href="https://www.youtube.com/watch?v=WQNj6WEh6pc&ab_channel=MartinNobel">ici</a> une vidéo (en anglais) qui vous montres comment installer une VM Fedora sur Mac M1. 
 
-Dans notre cas nous avons utiliser une VM **Ubuntu 20.04** sur VirtualBox
+Dans notre cas nous avons utilisé une VM **Ubuntu 20.04** sur VirtualBox
 
 ### Installation de VirtualBox  
 *Remarque: Si vous l'aviez déjà installé vous pouvez passer cette étape*
@@ -170,17 +170,17 @@ sudo apt-get update
 ```
 sudo apt-get install virtualbox
 ```
-Bravo vous venez d'installaer VirtualBox sur votre machine. 
+Bravo vous venez d'installer VirtualBox sur votre machine. 
 
 ### Installation de Vagrant
 Pour installer Vagrant vous avez deux méthodes : 
 1.  Vous pouvez aller directement sur le site officel de Vagrant en cliquant <a href="https://www.vagrantup.com/downloads.html">ici</a>  et télécharger le package correspondant à votre système d'exploitation.
-2. Si vous êtes sous Ubuntu comme nous voici les commandes à saisir : 
+2. Si vous êtes sous Ubuntu comme nous voici les commandes à saisir :
+
 Télécharger le package Vagrant:
 ```
 curl -O https://releases.hashicorp.com/vagrant/2.2.6/vagrant_2.2.6_i686.deb
 ```
-*Remarque : Au moment de la rédaction de cet article, la dernière version de Vagrant est la version 2.2.13. Rendez vous sur le site de Vagrant pour voir si une nouvelle version est disponible.*
 Une fois le fichier téléchargé, installez-le
 ```
 sudo apt install ./vagrant_2.2.6_i686.deb
@@ -201,7 +201,7 @@ Comme nous utilisons Ubuntu nous allons l'installer de la manière suivante:
 ```
 sudo apt install ansible
 ```
-Ensuite, pour savoir si l'installation c'est bien déroulée il faudra verifié la version de Ansible 
+Ensuite, pour savoir si l'installation s'est bien déroulée il faudra verifier la version de Ansible 
 ```
 ansible --version
 ```
@@ -211,12 +211,11 @@ ansible --version
 
 ### Éxécuter le projet 
 
-Maintenant que nous avons installer tous les outils dont nous avons besoin, il est temps d'excuter le projet. Dans une premier temps télécharger puis le dézipper dans votre dossier. Ensuite ouvrez votre terminal de commande puis dirigez vous vers le dossier où ce trouve notre projet. Pour notre part nous avons placé le projet dans le dossier *Documents*
-mettre la vagarnt_up
-Une fois dessus tapez la commande suivante : 
+Maintenant que nous avons installé tous les outils dont nous avons besoin, il est temps d'éxécuter le projet. Dans un premier temps télécharger le projet puis le dézipper dans votre dossier. Ensuite ouvrez votre terminale de commande puis dirigez-vous vers le dossier où se trouve notre projet. Pour notre part nous avons placé le projet dans le dossier *Documents*
 
 ![vagrant_up](https://user-images.githubusercontent.com/44178364/103303952-a053b900-4a07-11eb-9338-695881337d51.PNG)
 
+Une fois dessus tapez la commande suivante 
 ```
 vagrant up
 ```
