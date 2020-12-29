@@ -42,6 +42,7 @@ vagrant --version
 ```
 
 **Résultat**
+
 ![vagrant_version](https://user-images.githubusercontent.com/44178364/103303903-75696500-4a07-11eb-957a-563028dda033.PNG)
 
 ### Installation de Ansible
@@ -64,6 +65,8 @@ ansible --version
 Maintenant que nous avons installer tous les outils dont nous avons besoin, il est temps d'excuter le projet. Dans une premier temps télécharger puis le dézipper dans votre dossier. Ensuite ouvrez votre terminal de commande puis dirigez vous vers le dossier où ce trouve notre projet. Pour notre part nous avons placé le projet dans le dossier *Documents*
 mettre la vagarnt_up
 Une fois dessus tapez la commande suivante : 
+![vagrant_up](https://user-images.githubusercontent.com/44178364/103303952-a053b900-4a07-11eb-9338-695881337d51.PNG)
+
 ```
 vagrant up
 ```
