@@ -46,7 +46,7 @@ vagrant --version
 mettre la capture vagrant_version
 
 ### Installation de Ansible
-Pour installer Ansible, rendez-vous sur <a https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">le site d'Ansible</a> . 
+Pour installer Ansible, rendez-vous sur <a href ="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">le site d'Ansible</a> . 
 
 Comme nous utilison Ubuntu nous allons l'installer de la manière suivante: 
 ```
