@@ -8,9 +8,9 @@ Ces plugins permettent de s'assurer que les exigences réseau de Kubernetes sont
 
 Les outils utilisés dans ce projet sont : 
 ```
-*Virtualbox v6.1.16*
-*Vagrant v2.2.13*
-*Ansible v2.10.3*
+**Virtualbox v6.1.16**
+**Vagrant v2.2.13**
+**Ansible v2.10.3**
 ```
 ## Explication du projet 
 
