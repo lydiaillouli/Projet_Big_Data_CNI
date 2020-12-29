@@ -231,13 +231,15 @@ Voici les erreurs auquels nous avons fait face et comment nous y avons remedier.
 
 **Erreur 1 : Stderr: VBoxManage: error: VT-x is not available (VERR_VMX_NO_VMX)**
 
+
+
 <img width="827" alt="Erreur1" src="https://user-images.githubusercontent.com/44178364/103304416-df363e80-4a08-11eb-9b73-3d5d3b0789ab.png">
 
-Comme on souhaite ouvrir une machine virtuelle dans une machine virtuelle il est nécéssaire d'activer la case VTx/AMD imbriqué dans les paramètre de votre sytème. 
+Si vous utilisez une VM virtualbox comme machine hôte (comme nous) il est nécéssaire d'activer la case VTx/AMD imbriqué dans les paramètres de votre sytème. 
 
 <img width="675" alt="VTx" src="https://user-images.githubusercontent.com/44178364/103304303-8d8db400-4a08-11eb-8731-f0d58551cf94.png">
 
-Si la case est grisé vous pouvez tapez la command suivante dans votre terminale de commande Windows : 
+Si la case est grisée vous pouvez taper la commande suivante dans votre terminale de commande Windows : 
 ```
 VBoxManage modifyvm LeNomDeVotreMAchine --nested-hw-virt on
 ```
