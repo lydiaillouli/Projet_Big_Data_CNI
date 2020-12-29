@@ -43,7 +43,7 @@ vagrant --version
 
 **Résultat**
 
-<img src= "img/vagrant_version.png">
+![ansible_version](https://user-images.githubusercontent.com/44178364/103303783-291e2500-4a07-11eb-9375-02b7b7aa1db3.PNG)
 
 ### Installation de Ansible
 Pour installer Ansible, rendez-vous sur <a href ="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">le site d'Ansible</a> . 
