@@ -1,7 +1,11 @@
 ## Lancer le projet sur votre machine 
 
-Pour implémenter notre projet il faudra utiliser un systeme d'exploitation Linux (Ubuntu, Fedora, Debian...).
-- Si vous êtes sous *Windows* (ce qui était notre cas), le projet pourra être exécuter sur une machine virtuel Unbuntu (par exemple) via VirtualBox.
-- Si vous êtes sous *Mac* il suffit juste de télécharger VirtualBox ou bien Vmware. Attention ! Pour ceux qui sont sous le nouveau Mackbook M1, VirtualBox et WMware ne sont pas encore compatible avec cette nouvelle version. Vous pouvez néanmoins utiliser une machine virtuel Fedora pour lancer le projet. Retrouvez en cliquant <a href="https://www.youtube.com/watch?v=WQNj6WEh6pc&ab_channel=MartinNobel">ici</a> une vidéo (en anglais) qui vous montres comment installer une VM Fedora sur Mac M1. 
-
 ### Prérequis : 
+
+Pour implémenter notre projet il faudra utiliser un systeme d'exploitation Linux (Ubuntu, Fedora, Debian...).
+- Si vous êtes sous **Windows** (ce qui était notre cas), le projet pourra être exécuter sur une machine virtuel Unbuntu (par exemple) via VirtualBox.
+- Si vous êtes sous **Mac** il suffit juste de télécharger VirtualBox ou bien Vmware. Attention ! Pour ceux qui sont sous le nouveau Mackbook M1, VirtualBox et WMware ne sont pas encore compatible avec cette nouvelle version. Vous pouvez néanmoins utiliser une machine virtuel Fedora pour lancer le projet. Retrouvez en cliquant <a href="https://www.youtube.com/watch?v=WQNj6WEh6pc&ab_channel=MartinNobel">ici</a> une vidéo (en anglais) qui vous montres comment installer une VM Fedora sur Mac M1. 
+
+### Installation de VirtualBox  
+*Remarque: Si vous l'aviez déjà installé vous pouvez passez cette étape*
+
