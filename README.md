@@ -17,7 +17,7 @@ Les outils utilisés dans ce projet sont :
 ### Vagrant 
 Vagrant est un logiciel libre et open-source pour la création et la configuration des environnements de développement virtuel. Il peut être considéré comme un wrapper autour de logiciels de virtualisation comme VirtualBox.Il permet de simplifier et d'automatiser la gestion de machines vituels.
 
-C'est le fichier **Vagrantfile** qui permet de décrire comment nos VM seront configurées et déployées. 
+C'est le fichier **Vagrantfile** qui permet de décrire comment nos VM seront configurées et déployées : 
 
 ```ruby 
 # ####################################################################
@@ -103,8 +103,12 @@ end
 
 ```
 
+#### Description du Vagrantfile 
+Pour augmenter le nombre de noeuds par exemple, nous pouvons modifier la variable **WORKER_NBR**. Les variables **CPU** et **RAM** permettent d'allouer plus ou moins de ressources à nos noeuds. 
+Le fichier ci-dessus tel qu'il est configurer permet de déployer 2 noeuds (un master et un worker) avec 2 CPU ET 2048 de RAM pour chaque noeud avec un réseau privée hôte Virtualbox. Ce réseau va permettre l'accès aux noeuds Kubernetes depuis notre machine hôte.
 
 ### Ansible 
+
 
 
 ## Lancer le projet sur votre machine 
