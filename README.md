@@ -8,7 +8,7 @@ Les plugins mis en place par CNI ont pour but de grantir que les exigences rése
 
 Ces plugins permettent de s'assurer que les exigences réseau de Kubernetes sont satisfaites et fournissent les fonctionnalités réseau requises pour assurer le bon fonctionnement du cluster. Ainsi il existe plusieurs plugins dont le plugin flannel, qui est celui que nous avons utilisé dans ce projet.
 
-Les outils utilisés dance ce projet sont : 
+Les outils utilisés dans ce projet sont : 
 - Virtualbox v6.1.16
 - Vagrant v2.2.13
 - Ansible v2.10.3
