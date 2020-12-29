@@ -7,15 +7,14 @@ Un système distribué, est un système comportant de multiples composants situ�
 Ces plugins permettent de s'assurer que les exigences réseau de Kubernetes sont satisfaites et fournissent les fonctionnalités réseau requises pour assurer le bon fonctionnement du cluster. Ainsi il existe plusieurs plugins dont le plugin **flannel**, qui est celui que nous avons utilisé dans ce projet.
 
 Les outils utilisés dans ce projet sont : 
-```
--Virtualbox v6.1.16
--Vagrant v2.2.13
--Ansible v2.10.3
-```
+- Virtualbox v6.1.16
+- Vagrant v2.2.6
+- Ansible v2.9.6
+
 ## Structure du projet 
 
 ### Vagrant 
-Vagrant est un logiciel libre et open-source pour la création et la configuration des environnements de développement virtuel. Il peut être considéré comme un wrapper autour de logiciels de virtualisation comme VirtualBox.Il permet de simplifier et d'automatiser la gestion de machines vituels.
+Vagrant est un logiciel libre et open-source pour la création et la configuration des environnements de développement virtuel. Il peut être considéré comme un wrapper autour de logiciels de virtualisation comme VirtualBox. Il permet de simplifier et d'automatiser la gestion de machines vituels.
 
 C'est le fichier **Vagrantfile** qui permet de décrire comment nos VM seront configurées et déployées : 
 
