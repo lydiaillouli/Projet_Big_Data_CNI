@@ -100,12 +100,12 @@ end
 ```
 
 #### Description du Vagrantfile 
-Pour augmenter le nombre de noeuds par exemple, nous pouvons modifier la variable **WORKER_NBR**. Les variables **CPU** et **RAM** permettent d'allouer plus ou moins de ressources à nos noeuds. 
+Pour augmenter le nombre de noeuds par exemple, vous pouvez modifier la variable **WORKER_NBR**. Les variables **CPU** et **RAM** permettent d'allouer plus ou moins de ressources à nos noeuds. 
 Le fichier ci-dessus tel qu'il est configurer permet de déployer 2 noeuds (un master et un worker) avec **2 CPU** et **2048 de RAM** pour chaque noeud avec un **réseau privée hôte Virtualbox**. Ce réseau va permettre l'accès aux **noeuds Kubernetes** depuis notre machine hôte.
 
 ### Ansible 
 
-Nous avons utilisé l'outil Ansible pour automatiser l'installation et la configuration des package communs de nos noeuds.
+Vous pouvez l'outil Ansible pour automatiser l'installation et la configuration des package communs de nos noeuds.
 Pour cela nous avons 3 roles ansibles : 
 
 - **Common** : Installation et configuration des package communs de nos noeuds.
@@ -126,8 +126,24 @@ De plus, nous avons configuré un playbook ansible **main.yml** qui est appelé 
     - { role: worker}
 ```
 
-
 ### Le plugin flannel 
 
+Comme évoqué précedemment, les plugins CNI ont pour objectif de simplifier la configuration réseau des counteneurs Linux. 
+Kubernetes ne fournit pas de mise en œuvre de réseau par défaut, mais définit seulement le modèle et laisse à d'autres outils le soin de le mettre en œuvre. Il existe de nombreuses implémentations de nos jours, Flannel est l'une d'entre elles.
+
+#### Fonctionnement 
+Flannel créé un **bridge cni0** sur chaque nœud et y attache des interfaces **veth**. Les **pods** ne sont **créés** que sur les minions, le master ne contient aucune instance. Chaque nœud a donc son sous-réseau du **pool flannel**. 
+
+
+#### Déploiement  
+Flannel peut être ajouté à n'importe quel cluster Kubernetes existant, dans notre cas il nous a semblé plus simple de l'ajouter avant l'excution de notre projet gâce à ansible.
+Nous l'avons donc défini en tant que tâche sur notre **role master** : 
+
+```ruby
+- name: Install flannel pod network
+  become: false
+  command: kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+```
 
 ## Lancer le projet sur votre machine 
