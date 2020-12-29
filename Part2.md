@@ -95,7 +95,7 @@ VBoxManage modifyvm LeNomDeVotreMAchine --nested-hw-virt on
 ```
 La case sera cette fois-ci coché. Ainsi, lorsque vous allez exécuter la commande *vagrant up* l'erreur aura disparu.
 
-##Conclusion
+### Conclusion
 
 Ainsi nous vous avons présenté notre projet ainsi que les étapes qui vous permetterons de l'implémenter sur votre machine. Si vous avez des questions n'hésitez pas à nous contacter sur nos adresses emails : 
 
