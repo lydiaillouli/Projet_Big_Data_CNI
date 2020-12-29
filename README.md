@@ -109,6 +109,28 @@ Le fichier ci-dessus tel qu'il est configurer permet de déployer 2 noeuds (un m
 
 ### Ansible 
 
+Nous avons utilisé l'outil Ansible pour automatiser l'installation et la configuration des package communs de nos noeuds.
+Pour cela nous avons 3 roles ansibles : 
+- **Common** : Installation et configuration des package communs de nos noeuds.
+- **master** : Configuration spécifique au master Kubernetes.
+- **worker** : Configuration spécifique au worker Kubernetes.
+
+De plus, nous avons configuré un playbook ansible **main.yml** qui est appelé par le fichier vagrant vu précedemment : 
+
+```ruby
+- hosts: masters
+  become: yes
+  roles:
+    - { role: master}   
+
+- hosts: workers
+  become: yes
+  roles:
+    - { role: worker}
+```
+
+
+### Le plugin flannel 
 
 
 ## Lancer le projet sur votre machine 
