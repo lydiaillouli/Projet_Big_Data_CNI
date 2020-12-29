@@ -100,14 +100,14 @@ end
 
 #### Description du Vagrantfile 
 Pour augmenter le nombre de noeuds par exemple, vous pouvez modifier la variable **WORKER_NBR**. Les variables **CPU** et **RAM** permettent d'allouer plus ou moins de ressources à nos noeuds. 
-Le fichier ci-dessus tel qu'il est configurer permet de déployer 2 noeuds (un master et un worker) avec **2 CPU** et **2048 de RAM** pour chaque noeud avec un **réseau privée hôte Virtualbox**. Ce réseau va permettre l'accès aux **noeuds Kubernetes** depuis notre machine hôte.
+Le fichier ci-dessus tel qu'il est configuré permet de déployer 2 noeuds (un master et un worker) avec **2 CPU** et **2048 de RAM** pour chaque noeud avec un **réseau privée hôte Virtualbox**. Ce réseau va permettre l'accès aux **noeuds Kubernetes** depuis notre machine hôte.
 
 ### Ansible 
 
-Vous pouvez l'outil Ansible pour automatiser l'installation et la configuration des package communs de nos noeuds.
-Pour cela nous avons 3 roles ansibles : 
+Pour ce projet nous utilisons l'outil Ansible pour automatiser l'installation et la configuration des packages communs de nos noeuds.
+Pour cela nous avons 3 rôles ansibles : 
 
-- **Common** : Installation et configuration des package communs de nos noeuds.
+- **Common** : Installation et configuration des packages communs de nos noeuds.
 - **Master** : Configuration spécifique au master Kubernetes.
 - **Worker** : Configuration spécifique au worker Kubernetes.
 
@@ -125,6 +125,8 @@ De plus, nous avons configuré un playbook ansible **main.yml** qui est appelé 
     - { role: worker}
 ```
 
+Si la machine est de type master, on lance le rôle roles/master. En revanche si la machine est de type worker, on lance le rôle roles/worker.
+
 ### Le plugin flannel 
 
 Comme évoqué précedemment, les plugins CNI ont pour objectif de simplifier la configuration réseau des counteneurs Linux. 
@@ -133,6 +135,7 @@ Kubernetes ne fournit pas de mise en œuvre de réseau par défaut, mais défini
 #### Fonctionnement 
 Flannel créé un **bridge cni0** sur chaque nœud et y attache des interfaces **veth**. Les **pods** ne sont **créés** que sur les minions, le master ne contient aucune instance. Chaque nœud a donc son sous-réseau du **pool flannel**. 
 
+mettre une image 
 
 #### Déploiement  
 Flannel peut être ajouté à n'importe quel cluster Kubernetes existant, dans notre cas il nous a semblé plus simple de l'ajouter avant l'excution de notre projet gâce à ansible.
