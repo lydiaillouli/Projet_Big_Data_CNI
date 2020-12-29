@@ -135,10 +135,10 @@ Kubernetes ne fournit pas de mise en œuvre de réseau par défaut, mais défini
 #### Fonctionnement 
 Flannel créé un **bridge cni0** sur chaque nœud et y attache des interfaces **veth**. Les **pods** ne sont **créés** que sur les minions, le master ne contient aucune instance. Chaque nœud a donc son sous-réseau du **pool flannel**. 
 
-mettre une image 
+![MicrosoftTeams-image](https://user-images.githubusercontent.com/44178364/103305926-a8fabe00-4a0c-11eb-988f-93637b07608f.png)
 
 #### Déploiement  
-Flannel peut être ajouté à n'importe quel cluster Kubernetes existant, dans notre cas il nous a semblé plus simple de l'ajouter avant l'excution de notre projet gâce à ansible.
+Flannel peut être ajouté à n'importe quel cluster Kubernetes existant, dans notre cas il nous a semblé plus simple de l'ajouter avant l'excution de notre projet gâce à Ansible.
 Nous l'avons donc défini en tant que tâche sur notre **role master** : 
 
 ```ruby
@@ -151,16 +151,16 @@ Nous l'avons donc défini en tant que tâche sur notre **role master** :
 ## Lancer le projet sur votre machine 
 ### Prérequis : 
 
-Pour implémenter notre projet il faudra utiliser un systeme d'exploitation Linux (Ubuntu, Fedora, Debian...). 
-- Si vous êtes sous **Windows** (ce qui était notre cas), le projet pourra être exécuter sur une machine virtuel Unbuntu (par exemple) via VirtualBox.
-- Si vous êtes sous **Mac** il suffit juste de télécharger VirtualBox ou bien Vmware. Attention ! Pour ceux qui sont sous le nouveau Mackbook M1, VirtualBox et WMware ne sont pas encore compatible avec cette nouvelle version. Vous pouvez néanmoins utiliser une machine virtuel Fedora pour lancer le projet. Retrouvez en cliquant <a href="https://www.youtube.com/watch?v=WQNj6WEh6pc&ab_channel=MartinNobel">ici</a> une vidéo (en anglais) qui vous montres comment installer une VM Fedora sur Mac M1. 
+Pour implémenter notre projet il faudra utiliser un système d'exploitation Linux (Ubuntu, Fedora, Debian...). 
+- Si vous êtes sous **Windows** (ce qui était notre cas), le projet pourra être exécuté sur une machine virtuelle Unbuntu (par exemple) via VirtualBox.
+- Si vous êtes sous **Mac** il suffit juste de télécharger VirtualBox ou bien Vmware. Attention ! Pour ceux qui sont sous le nouveau Mackbook M1, VirtualBox et WMware ne sont pas encore compatible avec cette nouvelle version. Vous pouvez néanmoins utiliser une machine virtuelle Fedora pour lancer le projet. Retrouvez en cliquant <a href="https://www.youtube.com/watch?v=WQNj6WEh6pc&ab_channel=MartinNobel">ici</a> une vidéo (en anglais) qui vous montres comment installer une VM Fedora sur Mac M1. 
 
 Dans notre cas nous avons utiliser une VM **Ubuntu 20.04** sur VirtualBox
 
 ### Installation de VirtualBox  
 *Remarque: Si vous l'aviez déjà installé vous pouvez passer cette étape*
 
-Nous allons installer Virtual box directement via notre terminal de commande Linux.
+Nous allons installer VirtualBox directement via notre terminal de commande Linux.
 
 **Étape 1: Mettre à jour votre liste de paquets disponibles.**
 ```
