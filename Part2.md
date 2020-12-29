@@ -24,5 +24,7 @@ sudo apt-get install virtualbox
 Bravo vous venez d'installaer VirtualBox sur votre machine. 
 
 ### Installation de Vagrant
-
+Pour installer Vagrant vous avez deux méthodes : 
+1.  Vous pouvez aller directement sur le site officel de Vagrant en cliquant <a href="https://www.vagrantup.com/downloads.html">ici</a>  et télécharger le package correspondant à votre système d'exploitation.
+2. Si cous 
 
