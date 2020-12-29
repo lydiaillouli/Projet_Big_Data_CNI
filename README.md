@@ -7,3 +7,9 @@ CNI (Container Network Interface) est un projet de la Cloud Native Computing Fou
 Les plugins mis en place par CNI ont pour but de grantir que les exigences réseau de Kubernetes sont remplies et fournissent les fonctionnalités réseau requises pour assurer le bon fonctionnement du cluster. Différents plugins existent dont le plugin flannel, qui est celui utilisé dans notre rôle.
 
 Ces plugins permettent de s'assurer que les exigences réseau de Kubernetes sont satisfaites et fournissent les fonctionnalités réseau requises pour assurer le bon fonctionnement du cluster. Ainsi il existe plusieurs plugins dont le plugin flannel, qui est celui que nous avons utilisé dans ce projet. 
+
+Les outils utilisés dance ce projet sont : 
+- Virtualbox
+- Vagrant
+- Ansible
+
