@@ -13,7 +13,10 @@ Dans notre cas nous avons utiliser une VM **Ubuntu 20.04** sur VirtualBox
 
 Nous allons installer Virtual box directement via notre terminal de commande Linux.
 
-Étape 1 :  Mettre à jour votre liste de paquets disponibles. 
+####**Étape 1:  Mettre à jour votre liste de paquets disponibles.**
+```
+sudo apt-get update
+```
 
 
 
