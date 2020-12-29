@@ -62,4 +62,28 @@ mettre la capture ansible_version
 
 ### Éxécuter le projet 
 
+Maintenant que nous avons installer tous les outils dont nous avons besoin, il est temps d'excuter le projet. Dans une premier temps télécharger puis le dézipper dans votre dossier. Ensuite ouvrez votre terminal de commande puis dirigez vous vers le dossier où ce trouve notre projet. Pour notre part nous avons placé le projet dans le dossier *Documents*
+mettre la vagarnt_up
+Une fois dessus tapez la commande suivante : 
+```
+vagrant up
+```
+Une fois l'exécution terminée, il vous suffit d'ouvrir VirtualBox et vous visualiserez les deux machines.
+
+### Erreur possible
+Au moment ou vous excecutez votre projet avec la commande *vagrant up* il est possible que vous ayez des erreurs.
+Voici les erreurs auquels nous avons fait face et comment nous y avons remedier. 
+
+
+**Erreur 1 : Stderr: VBoxManage: error: VT-x is not available (VERR_VMX_NO_VMX)**
+
+Comme on souhaite ouvrir une machine virtuelle dans une machine virtuelle il est nécéssaire d'activer la case VTx/AMD imbriqué dans les paramètre de votre sytème. 
+
+Si la case est grisé vous pouvez tapez la command suivante dans votre terminale de commande Windows : 
+```
+VBoxManage modifyvm LeNomDeVotreMAchine --nested-hw-virt on
+
+```
+La case sera cette fois-ci coché. Ainsi, lorsque vous allez exécuter la commande *vagrant up* l'erreur aura disparu.
+
 
