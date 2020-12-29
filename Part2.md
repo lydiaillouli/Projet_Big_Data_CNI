@@ -71,6 +71,8 @@ Une fois dessus tapez la commande suivante :
 ```
 vagrant up
 ```
+![vagrant2](https://user-images.githubusercontent.com/44178364/103304169-2bcd4a00-4a08-11eb-9963-537978ef31e2.PNG)
+
 Une fois l'exécution terminée, il vous suffit d'ouvrir VirtualBox et vous visualiserez les deux machines.
 
 ### Erreur possible
