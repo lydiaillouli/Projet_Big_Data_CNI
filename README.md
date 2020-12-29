@@ -105,15 +105,16 @@ end
 
 #### Description du Vagrantfile 
 Pour augmenter le nombre de noeuds par exemple, nous pouvons modifier la variable **WORKER_NBR**. Les variables **CPU** et **RAM** permettent d'allouer plus ou moins de ressources à nos noeuds. 
-Le fichier ci-dessus tel qu'il est configurer permet de déployer 2 noeuds (un master et un worker) avec 2 CPU ET 2048 de RAM pour chaque noeud avec un réseau privée hôte Virtualbox. Ce réseau va permettre l'accès aux noeuds Kubernetes depuis notre machine hôte.
+Le fichier ci-dessus tel qu'il est configurer permet de déployer 2 noeuds (un master et un worker) avec **2 CPU** et **2048 de RAM** pour chaque noeud avec un **réseau privée hôte Virtualbox**. Ce réseau va permettre l'accès aux **noeuds Kubernetes** depuis notre machine hôte.
 
 ### Ansible 
 
 Nous avons utilisé l'outil Ansible pour automatiser l'installation et la configuration des package communs de nos noeuds.
 Pour cela nous avons 3 roles ansibles : 
+
 - **Common** : Installation et configuration des package communs de nos noeuds.
-- **master** : Configuration spécifique au master Kubernetes.
-- **worker** : Configuration spécifique au worker Kubernetes.
+- **Master** : Configuration spécifique au master Kubernetes.
+- **Worker** : Configuration spécifique au worker Kubernetes.
 
 De plus, nous avons configuré un playbook ansible **main.yml** qui est appelé par le fichier vagrant vu précedemment : 
 
