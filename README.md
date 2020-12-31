@@ -247,6 +247,7 @@ La case sera cette fois-ci coché. Ainsi, lorsque vous allez exécuter la comman
 
 ### Conclusion
 
+
 Nous vous avons présenté notre projet ainsi que les étapes qui vous permetterons de l'implémenter sur votre machine. Si vous avez des questions n'hésitez pas à nous contacter sur nos adresses emails : 
 
 mohamed.benbouzid@edu.ece.fr
