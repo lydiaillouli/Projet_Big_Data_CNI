@@ -133,7 +133,7 @@ Comme évoqué précedemment, les plugins CNI ont pour objectif de simplifier la
 Kubernetes ne fournit pas de mise en œuvre de réseau par défaut, mais définit seulement le modèle et laisse à d'autres outils le soin de le mettre en œuvre. Il existe de nombreuses implémentations de nos jours, Flannel est l'une d'entre elles.
 
 #### Fonctionnement 
-Flannel créé un **bridge cni0** sur chaque nœud et y attache des interfaces **veth**. Les **pods** ne sont **créés** que sur les minions, le master ne contient aucune instance. Chaque nœud a donc son sous-réseau du **pool flannel**. 
+Flannel créé un **bridge cni0** sur chaque nœud et y attache des interfaces **veth**. Les **pods** ne sont **créés** que sur les minions (noeuds), le master ne contient aucune instance. Chaque nœud a donc son sous-réseau du **pool flannel**. 
 
 ![MicrosoftTeams-image](https://user-images.githubusercontent.com/44178364/103305926-a8fabe00-4a0c-11eb-988f-93637b07608f.png)
 
